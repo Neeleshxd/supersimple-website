@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-task-container input[type="text"],
+.add-task-container input[type="number"],
+.add-task-container select,
+.add-task-container input[type="datetime-local"],
+.add-task-container input[type="date"] {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.add-task-container button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-container button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.task-item.high {
+  background-color: #f44336;
+  color: white;
+}
+
+.task-item.medium {
+  background-color: #ff9800;
+  color: white;
+}
+
+.task-item.low {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+}
+
+.task-item .delete-button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-item .due-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Add styling for the dark mode */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .add-task-container input[type="text"],
+.dark-mode .add-task-container input[type="number"],
+.dark-mode .add-task-container select,
+.dark-mode .add-task-container input[type="datetime-local"],
+.dark-mode .add-task-container input[type="date"],
+.dark-mode .toggle-container button,
+.dark-mode .task-item {
+  background-color: #222;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark-mode .task-item.high {
+  background-color: #f44336;
+}
+
+.dark-mode .task-item.medium {
+  background-color: #ff9800;
+}
+
+.dark-mode .task-item.low {
+  background-color: #4CAF50;
+}
+
+.dark-mode .task-item.completed {
+  text-decoration-color: #fff;
+}
+
+.dark-mode .task-item .delete-button {
+  background-color: #f44336;
+}
+
+.dark-mode .task-item .due-date {
+  color: #ccc;
+}
