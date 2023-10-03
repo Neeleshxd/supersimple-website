@@ -23,6 +23,34 @@
       <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </div>
     <ul id="task-list"></ul>
+    <div class="highlight-container">
+      <h2>Highlights of the Day</h2>
+      <input type="file" id="image-upload">
+      <button id="create-highlight">Create Highlight</button>
+      <ul id="highlight-list"></ul>
+      <h2>Motivation Quotes</h2>
+      <ul id="motivation-quotes-list"></ul>
+      <audio id="background-music" src="backgroundmusic.mp3" loop></audio>
+    </div>
+    <div class="calendar-container">
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <h3 id="calendar-month-year"></h3>
+          <button id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="calendar-days"></div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
